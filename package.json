@@ -1,0 +1,14 @@
+{
+  "name": "dailyai",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:service": "npm run start:dev --workspace=apps/service",
+    "dev:mobile": "npm run ios --workspace=apps/mobile",
+    "build": "npm run build --workspaces"
+  }
+}

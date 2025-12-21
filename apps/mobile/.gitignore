@@ -1,0 +1,12 @@
+# Expo
+.expo/
+web-build/
+
+# Native
+ios/Pods/
+android/app/build/
+android/.gradle/
+
+# Keys
+*.pem
+*.keystore
