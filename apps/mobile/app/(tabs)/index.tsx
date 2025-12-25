@@ -14,7 +14,7 @@ import {
 import { StatusBar } from "expo-status-bar";
 import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
-import { chatApi } from "../api/chat";
+import { chatApi } from "../../src/api/chat";
 
 interface Message {
   id: string;
