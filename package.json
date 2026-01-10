@@ -7,8 +7,9 @@
     "packages/*"
   ],
   "scripts": {
-    "dev:service": "npm run start:dev --workspace=apps/service",
-    "dev:mobile": "npm run ios --workspace=apps/mobile",
+    "dev:service": "npm run start:dev -w apps/service",
+    "dev:mobile": "npm run ios -w apps/mobile",
+    "dev": "npm run dev:service & npm run dev:mobile",
     "build": "npm run build --workspaces"
   }
 }

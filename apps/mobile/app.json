@@ -26,9 +26,21 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "newArchEnabled": false,
+    "newArchEnabled": true,
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-av",
+        {
+          "microphonePermission": "允许 DailyAI 访问您的麦克风以使用语音功能。"
+        }
+      ],
+      [
+        "@react-native-voice/voice",
+        {
+          "microphonePermission": "允许 DailyAI 访问您的麦克风以使用语音识别功能。"
+        }
+      ]
     ]
   }
 }

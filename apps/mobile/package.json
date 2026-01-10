@@ -9,7 +9,10 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-native-voice/voice": "^3.2.4",
     "expo": "~54.0.30",
+    "expo-audio": "^1.1.1",
+    "expo-av": "^16.0.8",
     "expo-constants": "^18.0.12",
     "expo-linking": "^8.0.11",
     "expo-router": "^6.0.21",

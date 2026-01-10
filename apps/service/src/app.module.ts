@@ -6,7 +6,14 @@ import { PrismaModule } from './prisma/prisma.module';
 import { ChatModule } from './chat/chat.module';
 
 @Module({
-  imports: [ConfigModule.forRoot({ isGlobal: true }), PrismaModule, ChatModule],
+  imports: [
+    ConfigModule.forRoot({
+      isGlobal: true,
+      envFilePath: '.env', // 明确指定 .env 文件路径
+    }),
+    PrismaModule,
+    ChatModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
